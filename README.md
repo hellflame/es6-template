@@ -49,10 +49,11 @@
 1. 所有的项目开发都在 `project` 目录中进行
 2. `release` 目录用于转译 `es6` 语法，结构上与 `project` 保持一致，并且额外生成 `source map` ，方便运行调试
 3. `project/utils/arg_parse.js` 用于命令行解析配置，版本信息来源于 `package.json`
-4. `test` 目录下包含所有测试用例，只需要测试文件以 `.test.js` 作为文件后缀即可，测试同时会输出覆盖率报告，保存在目录下的 `coverage` 目录下
-5. `.babelrc` 文件主要用于转译配置，包含路由映射配置，暂时将 `@` 映射为 `project` 目录，可根据需要添加
-6. `.editorconfig` 文件为 editorconfig 配置文件，需要编辑器支持
-7. `jest.json` 包含测试配置项，其中包含测试用例中的模块映射，这里的模块映射与 `project` 下的模块映射不同，不能混在一起
+4. `project/utils/meta.js` 用于预处理项目元信息，包含 `版本号`、`描述`、`兼容版本号` 等
+5. `test` 目录下包含所有测试用例，只需要测试文件以 `.test.js` 作为文件后缀即可，测试同时会输出覆盖率报告，保存在目录下的 `coverage` 目录下
+6. `.babelrc` 文件主要用于转译配置，包含路由映射配置，暂时将 `@` 映射为 `project` 目录，可根据需要添加
+7. `.editorconfig` 文件为 editorconfig 配置文件，需要编辑器支持
+8. `jest.json` 包含测试配置项，其中包含测试用例中的模块映射，这里的模块映射与 `project` 下的模块映射不同，不能混在一起
 
 #### 命令说明
 
